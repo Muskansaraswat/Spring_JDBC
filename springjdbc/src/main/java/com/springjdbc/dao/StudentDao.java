@@ -2,6 +2,8 @@ package com.springjdbc.dao;
 
 import java.util.List;
 
+import org.testng.annotations.Test;
+
 import com.springjdbc.entities.Student;
 
 public interface StudentDao {

@@ -1,5 +1,7 @@
 package com.springjdbc.entities;
 
+import org.testng.annotations.Test;
+
 public class Student {
 	
 	private int id;
@@ -16,18 +18,21 @@ public class Student {
 		this.name = name;
 		this.city = city;
 	}
+	@Test
 	public int getId() {
 		return id;
 	}
 	public void setId(int id) {
 		this.id = id;
 	}
+	@Test
 	public String getName() {
 		return name;
 	}
 	public void setName(String name) {
 		this.name = name;
 	}
+	@Test
 	public String getCity() {
 		return city;
 	}

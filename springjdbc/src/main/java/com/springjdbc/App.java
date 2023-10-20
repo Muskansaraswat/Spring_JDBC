@@ -23,35 +23,34 @@ public class App
     	//spring jdbc ->JdbcTemplate
     	ApplicationContext context=new ClassPathXmlApplicationContext("com/springjdbc/config.xml");
 		//Simplest method without using interface
-//		JdbcTemplate template = (JdbcTemplate) context.getBean("jdbcTemplate");
-//		String query="INSERT INTO Student values(?,?,?)";
-//		int result=template.update(query,23,"Prakash Jha","Kanpur");
-//    	
+    	//JdbcTemplate template = (JdbcTemplate) context.getBean("jdbcTemplate");
+    	//String query="INSERT INTO Student values(?,?,?)";
+    	//int result=template.update(query,27,"Prakash Jha","Kanpur");    	
     	
      	StudentDao studentDao= context.getBean("studentDao",StudentDao.class);
-//    	//INSERT
-//    	Student std=new Student();
-//    	std.setId(20);
-//    	std.setName("Manish");
-//    	std.setCity("Lucknow");
-//    	System.out.println("Rows affected "+studentDao.insert(std));
+     	/*//INSERT
+	   	Student student1=new Student();
+    	student1.setId(25);
+	   	student1.setName("Rutu");
+	  	student1.setCity("Nasik");
+    	System.out.println("Rows affected "+studentDao.insert(student1));
     	
      	//UPDATE
-//    	Student std=new Student();
-//    	std.setId(222);
-//    	std.setName("Meghna Arora");
-//    	std.setCity("Punjab");
-//    	System.out.println("Data Updated"+studentDao.change(std));
-     	
+    	Student student2=new Student();
+    	student2.setId(26);
+    	student2.setName("Prerna");
+	   	student2.setCity("Bhopal");
+	   	System.out.println("Data Updated"+studentDao.change(student2));
+	     	
      	//DELETE
-//    	Scanner input=new Scanner(System.in);
-//        System.out.print("Enter Student Id : ");
-//        int id=input.nextInt();
-//     	System.out.println("Data Deleted "+studentDao.remove(id));
+   	    Scanner input=new Scanner(System.in);
+        System.out.print("Enter Student Id : ");
+        int id=input.nextInt();
+   	    System.out.println("Data Deleted "+studentDao.remove(id));
      	
      	//Selecting single Data
-//     	Student std=studentDao.getStudent(id);
-//     	System.out.println(std);
+    	Student std=studentDao.getStudent(26);
+     	System.out.println(std);*/
      	
      	//Selecting all rows Data
      	List<Student> students=studentDao.getAllStudents();
